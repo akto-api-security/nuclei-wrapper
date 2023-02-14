@@ -24,7 +24,7 @@ go1.19.4
 
 #### Run tests and view results
 1. `mkdir files` (the directory where summary of the test will be stored)
-2. `./nuclei_akto -u {{base_url}} -t {{nuclei-template-location}} -output-files-dir /files -store-resp-dir /calls -template-dir {{current_directory_path}} -v Method=GET -h {{header_key}}:"{{header_value}}"`
+2. `./nuclei_akto -u {{base_url}} -t {{nuclei-template-location}} -output-files-dir files -store-resp-dir calls -template-dir {{current_directory_path}} -v Method=GET -h {{header_key}}:"{{header_value}}"`
 3.  All request and responses are stored in `calls/http/` and summary of the test is stored in `files/main.txt`
 
 ## Contributing
